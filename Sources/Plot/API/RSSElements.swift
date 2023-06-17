@@ -141,6 +141,7 @@ extension Node where Context: RSSContentContext {
   ) -> Node {
     let formatter = RSS.dateFormatter
     // formatter.timeZone = timeZone
+
     let dateString = formatter.string(from: date)
     return .element(named: "pubDate", text: dateString)
   }

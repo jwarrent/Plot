@@ -65,6 +65,7 @@ extension Node where Context == SiteMap.URLContext {
   public static func lastmod(_ date: Date, timeZone: TimeZone = .current) -> Node {
     let formatter = SiteMap.dateFormatter
     // formatter.timeZone = timeZone
+
     let dateString = formatter.string(from: date)
     return .element(named: "lastmod", text: dateString)
   }

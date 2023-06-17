@@ -76,6 +76,7 @@ extension RSS {
     let formatter = DateFormatter()
     // formatter.dateFormat = "E, d MMM yyyy HH:mm:ss Z"
     // formatter.locale = Locale(identifier: "en_US_POSIX")
+
     return formatter
   }()
 }
