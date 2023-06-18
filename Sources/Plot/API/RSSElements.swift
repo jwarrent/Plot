@@ -47,7 +47,7 @@ extension Node where Context: RSSChannelContext {
     timeZone: TimeZone = .current
   ) -> Node {
     let formatter = RSS.dateFormatter
-    formatter.timeZone = timeZone
+    // formatter.timeZone = timeZone
     let dateString = formatter.string(from: date)
     return .element(named: "lastBuildDate", text: dateString)
   }
